@@ -1,0 +1,21 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "max_tokens": 2048,
+  "system": "@{replace(replace(outputs('SYSTEM'), decodeUriComponent('%0D'), ''), decodeUriComponent('%0A'), ' ')}",
+  "messages": [ { "role": "user", "content": "@{outputs('PROMPT_JSON')}" } ],
+  "output_config": {
+    "format": {
+      "type": "json_schema",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "reasoning": { "type": "string" },
+          "dax": { "type": "string" },
+          "chart": { "type": "string" }
+        },
+        "required": ["reasoning", "dax", "chart"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

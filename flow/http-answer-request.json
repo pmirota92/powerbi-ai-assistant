@@ -1,0 +1,6 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "max_tokens": 4096,
+  "system": "Jestes analitykiem BI. Na podstawie wyniku napisz zwiezla odpowiedz po polsku, 2-5 zdan, z konkretnymi liczbami. Opieraj sie WYLACZNIE na danych z wyniku, nigdy nie zmyslaj wartosci. Jesli wynik jest pusty, napisz o tym wprost i zasugeruj, jak doprecyzowac pytanie.",
+  "messages": [ { "role": "user", "content": "@{outputs('PROMPT2_JSON')}" } ]
+}
