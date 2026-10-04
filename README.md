@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/33035038/README.md)
 <div align="center">
 
 # Conversational BI for Power BI — built entirely on Power Platform
@@ -29,6 +30,28 @@ to it, so nobody has to take the number on faith.
 
 Everything runs inside tools most organisations already have: **one Power Automate flow and one
 Power Apps canvas app**.
+
+---
+
+## See it work
+
+<div align="center">
+  <img src="assets/demo.gif" alt="Question in Polish, generated DAX, answer with figures" width="820">
+</div>
+
+**A question about the data** — the assistant picks the right measures, runs the query and
+answers with concrete figures:
+
+<div align="center">
+  <img src="assets/answer.png" alt="Answer with the generated DAX below it" width="820">
+</div>
+
+**A question the model cannot answer** — no invented numbers, just an explanation of what is
+missing. This matters more than the happy path:
+
+<div align="center">
+  <img src="assets/refusal.png" alt="Out-of-scope question returns an explanation, not a number" width="820">
+</div>
 
 ---
 
